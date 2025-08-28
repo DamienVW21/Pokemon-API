@@ -20,7 +20,7 @@ public class PokemonService {
         return rs.getResults();
     }
     public List<Pokemon> getMorePokemon(int startVal){
-        String moreUrl = API_URL + "offset=" + startVal + "&limit=20";
+        String moreUrl = API_URL + "?offset=" + startVal + "&limit=20";
 
         Results rs = restClient
                 .get()

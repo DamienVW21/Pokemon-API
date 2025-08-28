@@ -19,7 +19,7 @@ public class Main {
         // create pokemonservice object to query the api
         PokemonService pokemonService = new PokemonService();
         // it returns a list of pokemon objects
-        List<Pokemon> list = pokemonService.getAllPokemon();
+        List<Pokemon> list = pokemonService.getMorePokemon(0);
         System.out.println(list);
     }
 }
