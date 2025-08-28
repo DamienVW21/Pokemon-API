@@ -45,5 +45,6 @@ public class PokemonService {
                     Integer.parseInt(pokemonUrl.substring(slashIndex + 1, pokemonUrl.length() - 1));
             p.setId(pokemonId);
         }
+        return list;
     }
 }
